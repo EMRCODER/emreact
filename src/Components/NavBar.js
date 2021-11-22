@@ -1,5 +1,6 @@
 import React from "react"
 import Logo from './Logo.js'
+import CartWidget from "./CartWidget.js";
 
 class Navbar extends React.Component {
     render (){
@@ -13,7 +14,9 @@ class Navbar extends React.Component {
                     <li className="nav-item"><a class="nav-link text-white" href="#">Bebidas</a></li>
                     <li className="nav-item"><a class="nav-link text-white" href="#">Limpieza</a></li>
                 </ul>
-                
+                <CartWidget cantidad={'4'} />
+
+
               </div>
         </nav>
       
