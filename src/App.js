@@ -2,18 +2,25 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar.js'
 import ItemListContainer from './Components/ItemListContainer';
+import {useState, useEffect} from 'react';
 
-function App() {
+
+
+const App = () => {
+  const [title, setTitle] = useState('Newellscarajo');
+   
   return (
-    <div className="App">
+
+   <div className="App">
 
       <NavBar />
-      <ItemListContainer lista="LISTA A COMPLETAR" />
+      <ItemListContainer lista="Electrónica" />
+     
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Tienda Emiliano Ruiz
-        </p>
+        <p> {title}  </p>
+        <button onClick={()=> setTitle('Nombre actualizado')  }  > Cambiar Title </button>
         
       </header>
       

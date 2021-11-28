@@ -6,7 +6,7 @@ class Navbar extends React.Component {
     render (){
           return (
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="d-flex justify-content-center " style={{width:'100vw'}}>
                 <Logo />
                 <ul className="d-inline-flex mt-2" >
