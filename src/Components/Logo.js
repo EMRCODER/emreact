@@ -5,7 +5,7 @@ class Logo extends React.Component {
     render (){
           return (
 
-            <img style={{position:'absolute', left:'40px', top:'15px'}}  className="rounded-circle " width="50" src={logoEMR} />    
+            <img style={{position:'absolute', left:'10px', top:'5px'}}  className="rounded-circle " width="150" src={logoEMR} />    
         
     );
   }
