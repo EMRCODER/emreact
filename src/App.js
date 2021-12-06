@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './Components/NavBar.js'
 import ItemListContainer from './Components/ItemListContainer';
 
-
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
 const App = () => {
    
@@ -13,7 +13,11 @@ const App = () => {
 
       <NavBar /> 
       <ItemListContainer />
-      
+       
+
+      <ItemDetailContainer />
+
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
