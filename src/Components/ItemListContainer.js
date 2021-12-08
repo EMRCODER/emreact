@@ -9,6 +9,9 @@ function getItems(){
       price:'70',
       pictureUrl:'https://www.coca-colacompany.com/content/dam/journey/au/en/brand-detail/coca-cola/Large_product_shot_Coca-Cola_Classic_updated.png',
       stock:'20',
+      desc:'Gaseosa a base de estractos vegetales, sabor cola. 485 cc',
+      cat:'Bebidas',
+      minOrd:'60',
     },
     {
       id:'2',
@@ -16,6 +19,9 @@ function getItems(){
       price:'350',
       pictureUrl:'https://http2.mlstatic.com/D_NQ_NP_681062-MLA43242723836_082020-O.jpg',
       stock:'30',
+      desc:'Alimento a base de papas. Frito con aceite vegetal. 480gr',
+      cat:'Copetin',
+      minOrd:'5',
     },
     {
       id:'3',
@@ -23,6 +29,9 @@ function getItems(){
       price:'280',
       pictureUrl:'https://images-na.ssl-images-amazon.com/images/I/51Ms0pNXUiL._SX300_SY300_QL70_FMwebp_.jpg',
       stock:'10',
+      desc:'Oreos bañadas en chocolate, 6 packs de 10u. 320gr',
+      cat:'Galletitas',
+      minOrd:'1',
     }]
       setTimeout(() => resolve(object), 3000 )
 

@@ -13,10 +13,7 @@ const App = () => {
 
       <NavBar /> 
       <ItemListContainer />
-       
-
       <ItemDetailContainer />
-
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

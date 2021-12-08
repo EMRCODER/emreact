@@ -12,7 +12,7 @@ const ItemCount = ({name, stock, initial, onAdd}) => {
 
    return (
 
-      <div className="row justify-content-center align-items-center container border" style={{width:'30vw'}}>
+      <div >
             <div className="col-auto text-center">
             
                     <h4>{Name}</h4>  
