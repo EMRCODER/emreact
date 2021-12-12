@@ -1,19 +1,19 @@
 import React,{ useState, useEffect} from 'react';
 import ItemList from './ItemList';
-import { getProducts } from '../Products'
+import { getProductByCat } from '../Products'
+import {useParams} from 'react-router-dom'
 
 
-const ItemListContainer = () => {
+const ItemCatContainer = () => {
 
   const [products, setProducts] = useState([])
-
+  const { paramId } = useParams()
+  
     useEffect(() => {
-      const list = getProducts()
-      list.then(response => {
-        setProducts(response)
+      getProductByCat(paramId).then(cat => {
+        setProducts(cat);
       })
-    }, [])
-
+    }, [paramId])
 
    return (
            <div>
@@ -22,4 +22,4 @@ const ItemListContainer = () => {
           );
   }
 
-  export default ItemListContainer
+  export default ItemCatContainer

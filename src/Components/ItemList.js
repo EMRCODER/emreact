@@ -1,12 +1,12 @@
 import React from 'react';
 import Item from './Item';
 
-const ItemList = ({items}) => {
-
+const ItemList = ({ products = []}) => {
+ 
     return (
         <div>
             <ul className="d-inline-flex" style={{listStyleType:'none'}}>
-                {items.map(i => <li key={i.id}><Item id={i.id} title={i.name} price={i.price} stock={i.stock} pictureUrl={i.pictureUrl} /></li>)}
+                  {products.map(product =><Item key={product.id} product={product}/> )}
             </ul>               
         </div>
     )
