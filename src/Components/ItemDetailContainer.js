@@ -5,7 +5,7 @@ import {useParams} from 'react-router-dom'
 
 
 const ItemDetailContainer = () => {
-
+    const [inputType, setInputType] = useState('button')
     const [product, setProduct] = useState([])
     const { paramId } = useParams()
 
@@ -16,10 +16,13 @@ const ItemDetailContainer = () => {
     }, [paramId])
 
 
+
    return (
           <div>
                 {product.length!==0 ? (
-                 <div><ItemDetail  product={product} /></div>
+                  
+                 <div>
+                            <ItemDetail  product={product} inputType={inputType}/></div>
                 ):(<h1>CARGANDO</h1>)}
           </div>
           );

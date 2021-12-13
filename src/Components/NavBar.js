@@ -2,6 +2,7 @@ import React,{ useState, useEffect} from 'react';
 import Logo from './Logo.js'
 import CartWidget from "./CartWidget.js";
 import CatList from "./CatList.js";
+import ItemDetail from "./ItemDetail.js";
 import {Link} from 'react-router-dom'
 import { getCategories } from '../Products'
 
@@ -16,7 +17,7 @@ const Navbar = () => {
           setCategories(response)
         })
       }, [])
-    
+
       return (
 
         <nav className="navbar navbar-expand-lg navbar-light bg-black">
@@ -26,7 +27,7 @@ const Navbar = () => {
                     <Link to={'/'} className='nav-link text-white' >Home</Link>
                     <CatList categories={categories} />
                 </ul>
-                <CartWidget cantidad={'4'} />
+                <CartWidget cantidad={ItemDetail.cartCount} />
 
               </div>
         </nav>

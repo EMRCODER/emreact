@@ -37,7 +37,10 @@ const App = () => {
             {categories.map(category =>
               <Route key={category.id} path='/category/:paramId' >
               <ItemCatContainer />
-              </Route> )}
+            </Route> )}
+            
+            <Route path='/cart'>
+            </Route>
 
           </Switch>
       </BrowserRouter>
